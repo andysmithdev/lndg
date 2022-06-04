@@ -175,6 +175,7 @@ def home(request):
                 'profit_per_outbound_real': 0 if sum_outbound == 0 else int((total_earned_7day - total_costs_7day)/(sum_outbound/1000000)),
                 'percent_cost': 0 if total_earned == 0 else int((total_costs/total_earned)*100),
                 'percent_cost_7day': 0 if total_earned_7day == 0 else int((total_costs_7day/total_earned_7day)*100),
+                'total_profit' : int(total_earned - total_costs),
                 'onchain_costs': onchain_costs,
                 'onchain_costs_7day': onchain_costs_7day,
                 'total_7day_fees': int(total_7day_fees),
