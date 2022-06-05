@@ -1,5 +1,5 @@
 services:
-  lndg:
+  lndge:
     build: .
     volumes:
       - /root/.lnd:/root/.lnd:ro
